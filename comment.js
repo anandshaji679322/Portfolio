@@ -1,6 +1,6 @@
 // Function to add a comment
 function addComment(projectName) {
-    var commentInput = document.getElementById('commentInput').value;
+    var commentInput = document.getElementById(projectName + 'CommentInput').value;
     if (commentInput.trim() === '') {
         alert('Please enter a comment.');
         return;
@@ -10,12 +10,12 @@ function addComment(projectName) {
     comments.push(commentInput);
     localStorage.setItem(projectName, JSON.stringify(comments));
     displayComments(projectName);
-    document.getElementById('commentInput').value = '';
+    document.getElementById(projectName + 'CommentInput').value = '';
 }
 
 // Function to display comments
 function displayComments(projectName) {
-    var commentsSection = document.getElementById('commentsSection');
+    var commentsSection = document.getElementById(projectName + 'CommentsSection');
     var comments = JSON.parse(localStorage.getItem(projectName)) || [];
     commentsSection.innerHTML = '';
     comments.forEach(function(comment) {
@@ -27,6 +27,7 @@ function displayComments(projectName) {
 
 // Call displayComments on page load for each project
 window.onload = function() {
-    displayComments('clima'); // Change the project name as needed
-    // Call displayComments for other projects if needed
+    displayComments('clima');
+    displayComments('bmi');
+    displayComments('xylophone');
 };
