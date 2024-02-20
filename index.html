@@ -103,63 +103,61 @@
     
 
     <section class="bg-white p-5" id="Project-section">
-      <div class="container">
-        <header>
-          <h1 class="text-center">Projects</h1>
-        </header>
-        <div class="row">
+      <div class="row">
+          <!-- Clima Project -->
           <div class="col-md-4">
-            <div class="card text-center p-3" style="height: 39rem; ;">
-                <div style="position: relative; width: 100%; padding-top: 100%;">
-                    <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="card-img-top">
-                        <source src="video/Clima.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Clima</h5>
-                    <p class="card-text">I developed a climate app using Flutter, offering real-time weather information for users globally. This project honed my skills in Flutter development and API integration, enabling me to deliver efficient solutions for real-world challenges.</p>
-                    <a href="https://github.com/anandshaji679322/Weather_App" class="btn btn-primary">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card text-center p-3" style="height: 39rem;">
-              <div style="position: relative; width: 100%; padding-top: 100%;">
-                  <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="card-img-top">
-                      <source src="video/BMI.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
+              <div class="card text-center p-3" style="height: 39rem;">
+                  <div style="position: relative; width: 100%; padding-top: 100%;">
+                      <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="card-img-top">
+                          <source src="video/Clima.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Clima</h5>
+                      <p class="card-text">I developed a climate app using Flutter, offering real-time weather information for users globally. This project honed my skills in Flutter development and API integration, enabling me to deliver efficient solutions for real-world challenges.</p>
+                      <a href="https://github.com/anandshaji679322/Weather_App" class="btn btn-primary">View on GitHub</a>
+                  </div>
+                  <div class="card-body">
+                      <div id="commentsSection">
+                          <!-- Comments will be displayed here -->
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <textarea class="form-control mt-2" rows="3" placeholder="Add your comment" id="commentInput"></textarea>
+                      <button class="btn btn-primary mt-2" onclick="addComment('clima')">Add Comment</button>
+                  </div>
               </div>
-              <div class="card-body">
-                  <h5 class="card-title">BMI_CALCULATOR</h5>
-                  <p class="card-text">The BMI calculator app offers a simple way to calculate BMI, utilizing Flutter for a seamless user experience. Enhanced skills in Flutter development and UI/UX design. Proud of the results..</p>
-                  <div style="height: 2rem;"></div>
-                  <a href="https://github.com/anandshaji679322/BMI_CALCULATOR" class="btn btn-primary">View on GitHub</a>
+          </div>
+  
+          <!-- BMI Calculator Project -->
+          <div class="col-md-4">
+              <div class="card text-center p-3" style="height: 39rem;">
+                  <div style="position: relative; width: 100%; padding-top: 100%;">
+                      <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="card-img-top">
+                          <source src="video/BMI.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">BMI_CALCULATOR</h5>
+                      <p class="card-text">The BMI calculator app offers a simple way to calculate BMI, utilizing Flutter for a seamless user experience. Enhanced skills in Flutter development and UI/UX design. Proud of the results..</p>
+                      <a href="https://github.com/anandshaji679322/BMI_CALCULATOR" class="btn btn-primary">View on GitHub</a>
+                  </div>
+                  <div class="card-body">
+                      <div id="commentsSection">
+                          <!-- Comments will be displayed here -->
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <textarea class="form-control mt-2" rows="3" placeholder="Add your comment" id="commentInput"></textarea>
+                      <button class="btn btn-primary mt-2" onclick="addComment('bmi')">Add Comment</button>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="col-md-4">
-          <div class="card text-center p-3"style="height: 39rem;">
-              <div style="position: relative; width: 100%; padding-top: 100%;">
-                  <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="card-img-top">
-                      <source src="video/xylophone.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
-              <div class="card-body">
-                  <h5 class="card-title">Xylophone</h5>
-                  <p class="card-text">My latest project, a xylophone app built with Flutter, lets users play melodies with tap gestures. Enhanced Flutter skills and UI design. Excited for future improvements.</p>
-                  <div style="height: 3rem;"></div>
-                  <a href="https://github.com/anandshaji679322/xylophone" class="btn btn-primary">View on GitHub</a>
-              </div>
-          </div>
-      </div>
-      
-        </div>
-      </div>
-    </section>
+  </section>
+  
 
     <section class="p-5  bg-light" id="Contact-section">
       <div class="container">
@@ -224,9 +222,10 @@
     
     
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="comment.js"></script>
+
 </body>
 </html>
